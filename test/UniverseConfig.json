@@ -1,0 +1,178 @@
+{
+  "Name": "InitialUniverse",
+  "Logic": "D",
+  "VariableNames": [
+    "x",
+    "y",
+    "z"
+  ],
+  "Worlds": [
+    {
+      "Name": "w1",
+      "Variables": [
+        {
+          "Name": "x",
+          "Value": true
+        },
+        {
+          "Name": "y",
+          "Value": true
+        },
+	{
+          "Name": "z",
+          "Value": true
+        },
+      ],
+      "AdjWorlds": [
+        "w2",
+        "w3"
+      ]
+    },
+    {
+      "Name": "w2",
+      "Variables": [
+        {
+          "Name": "x",
+          "Value": true
+        },
+        {
+          "Name": "y",
+          "Value": true
+        },
+	{	
+          "Name": "z",
+          "Value": false
+        }
+      ],
+      "AdjWorlds": [
+        "w3",
+        "w4"
+      ]
+    },
+    {
+      "Name": "w3",
+      "Variables": [
+        {
+          "Name": "x",
+          "Value": true
+        },
+        {
+          "Name": "y",
+          "Value": false
+        },
+	{
+          "Name": "z",
+          "Value": true
+        }
+      ],
+      "AdjWorlds": [
+      ]
+    },
+    {
+      "Name": "w4",
+      "Variables": [
+        {
+          "Name": "x",
+          "Value": true
+        },
+        {
+          "Name": "y",
+          "Value": false
+        },
+	{
+          "Name": "z",
+          "Value": false
+        }
+      ],
+      "AdjWorlds": [
+      ]
+    },
+    {
+      "Name": "w5",
+      "Variables": [
+        {
+          "Name": "x",
+          "Value": false
+        },
+        {
+          "Name": "y",
+          "Value": true
+        },
+	{
+          "Name": "z",
+          "Value": true
+        }
+      ],
+      "AdjWorlds": [
+        "w5",
+        "w6",
+	"w7",
+        "w8"
+      ]
+    },
+    {
+      "Name": "w6",
+      "Variables": [
+        {
+          "Name": "x",
+          "Value": false
+        },
+        {
+          "Name": "y",
+          "Value": true
+        },
+	{
+          "Name": "z",
+          "Value": false
+        }
+      ],
+      "AdjWorlds": [
+        "w1",
+        "w3",
+	"w9"
+      ]
+    },
+    {
+      "Name": "w7",
+      "Variables": [
+        {
+          "Name": "x",
+          "Value": false
+        },
+        {
+          "Name": "y",
+          "Value": false
+        },
+	{
+          "Name": "z",
+          "Value": true
+        }
+      ],
+      "AdjWorlds": [
+        "w5",
+        "w1"
+      ]
+    },
+    {
+      "Name": "w8",
+      "Variables": [
+        {
+          "Name": "x",
+          "Value": false
+        },
+        {
+          "Name": "y",
+          "Value": false
+        },
+	{
+          "Name": "z",
+          "Value": false
+        }
+      ],
+      "AdjWorlds": [
+        "w6",
+        "w5"
+      ]
+    }
+  ]
+}
